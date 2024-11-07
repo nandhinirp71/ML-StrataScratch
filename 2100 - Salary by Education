@@ -1,0 +1,11 @@
+# Question
+
+Given the education levels and salaries of a group of individuals, 
+find what is the average salary for each level of education.
+
+# Solution
+# Import your libraries
+import pandas as pd
+
+# Start writing code
+google_salaries.groupby('education').agg(salary=('salary', 'mean')).reset_index()
